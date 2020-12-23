@@ -9,9 +9,9 @@ from decimal import Decimal, ROUND_DOWN, ROUND_UP
 
 pause = 0.5
 
-os.system('scp root@192.168.0.100:/data/data/com.anki.victor/persistent/jdocs/vic.RobotLifetimeStats.json ~/VectorSdk/robot_stats/vic.RobotLifetimeStats.json')
+os.system('scp root@192.168.0.100:/data/data/com.anki.victor/persistent/jdocs/vic.RobotLifetimeStats.json vic.RobotLifetimeStats.json')
 
-os.system('scp root@192.168.0.100:/data/data/com.anki.victor/persistent/jdocs/vic.RobotSettings.json ~/VectorSdk/robot_stats/vic.RobotSettings.json')
+os.system('scp root@192.168.0.100:/data/data/com.anki.victor/persistent/jdocs/vic.RobotSettings.json vic.RobotSettings.json')
 
 with open('vic.RobotSettings.json') as g:
     robotStats = json.load(g)
